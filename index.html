@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuru-Kuru Kuring Kuring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"/>
+</head>
+</head>
+<body>
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 d-flex align-items-center"
+            id="bd-theme"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="dropdown"
+            aria-label="Toggle theme (auto)">wlee<span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="info.html">Information</a></li>
+      <li><a class="dropdown-item" href="cange.html">Change</a></li>
+    </ul>
+  </div>
+    <main>
+        <div class="px-4 py-5 my-5 text-center">
+          <img class="d-block mx-auto mb-4" src="/img/hertaa2.gif" alt="" width="100" height="177">
+          <h1 class="display-5 fw-bold text-body-emphasis">kuru-kuru Kuriiing Kuriiing</h1>
+          <div class="col-lg-6 mx-auto">
+            <div id="content">
+                <div id="counter-container">
+                   <h3 class=""> Total Klik <span id="counter" class="badge text-bg-primary">0</span> </h3>
+                    <p id="counter-times"></p>
+
+                </div>
+                <div id="grid">
+                    <noscript><div class="alert alert-warning">Your browser does not support JavaScript or JavaScript has beendisabled.<br />This website relies on JavaScript, so please enable itor use another browser.</div></noscript>
+                </div>
+            </div>            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button class="btn btn-danger btn-lg px-4 gap-3" onclick="resetCounter()">Reset</button>
+              <div class="dropdown">
+                <button class="btn btn-light btn-lg px-4 gap-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  🎶🎶🎶
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button" onclick="pauseAudio()">Pause Audio</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="resetAudio()">Reset Audio</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="resumeAudio()">Resume Music</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+</body>
+<button style='visibility: hidden;' type="button" id="counter-button" onclick="counterClick()"></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="script.js" crossorigin="anonymous"></script>
+</html>
