@@ -6,8 +6,7 @@ function counterClick(event) {
     // Tambahkan kode yang ingin dijalankan saat elemen tersebut diklik
   }
 }
-var audio = new Audio('audio/bgm.mp3');
-  audio.play();
+
 
 document.addEventListener("click", counterClick);  //varible
     var audioList = [
