@@ -163,3 +163,7 @@ const audioElement = document.getElementById("audio-element");
 slideElement.addEventListener("touchstart", () => {
   audioElement.pause();
 });
+    var audio = new Audio('audio/bgm.mp3');
+audio.addEventListener('ended', function() {
+    audio.currentTime = 0;
+    audio.play();
