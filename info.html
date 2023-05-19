@@ -12,25 +12,28 @@
 <body>
   <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button class="btn btn-bd-primary py-2 d-flex align-items-center"
-            id="bd-theme"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="dropdown"
-            aria-label="Toggle theme (auto)">wlee<span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="info.html">Information</a></li>
-      <li><a class="dropdown-item" href="report.html">Report Bug</a></li>
-    </ul>
-  </div>
+    id="bd-theme"
+    type="button"
+    aria-expanded="false"
+    data-bs-toggle="dropdown"
+    aria-label="Toggle theme (auto)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
+      <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/>
+    </svg><span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="info.html">Information</a></li>
+<li><a class="dropdown-item" href="report.html">Report Bug</a></li>
+</ul>
+</div>
   <main class="container">
   
     <div class="my-3 p-3 bg-body rounded shadow-sm">
-      <h6 class="border-bottom pb-2 mb-0">Recent updates</h6>
+      <h6 class="border-bottom pb-2 mb-0">Recent updates Issues</h6>
       <div class="d-flex text-body-secondary pt-3">
         <p class="pb-3 mb-0 small lh-sm border-bottom">
-          <strong class="d-block text-gray-dark">v.1</strong>
-          Releasee!!
+          
+          <strong class="d-block text-gray-dark">Fix Mobile Design</strong>
+          <strong class="d-block text-gray-dark"> Fix Audio Mobile</strong>
         </p>
    
       </div>
@@ -50,8 +53,9 @@
                   <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
           <div class="d-flex justify-content-between">
             <strong class="text-gray-dark">Audio Assets</strong>               
-            <a href="#" data-bs-toggle="dropdown" aria-expanded="false">Download</a>
+            <a class='dropdown-toogle' href="#" data-bs-toggle="dropdown" aria-expanded="false">Download</a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="https://github.com/Rennd9/kuru-kuru/raw/main/audio/audio_packpage.rar">Packpage Audio</a></li>
                 <li><a class="dropdown-item" href="/audio/bgm.mp3">BGM</a></li>
                 <li><a class="dropdown-item" href="/audio/kuru1.mp3">Kuriiing1</a></li>
                 <li><a class="dropdown-item" href="/audio/kuru2.mp3">kuru-kuru22 </a></li>
@@ -66,7 +70,7 @@
         <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
           <div class="d-flex justify-content-between">
             <strong class="text-gray-dark">Source Theme</strong>
-            <a href="https://github.com/Rennd9/kuru-kuru/archive/refs/heads/main.zip">Download</a>
+            <a href="#">Download</a>
           </div>
           <span class="d-block">@kuruu-kuruuu</span>
         </div>
@@ -76,7 +80,7 @@
         <a class="btn btn-bd-primary" href="index.html" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-back" viewBox="0 0 16 16">
             <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
           </svg>Kembali Ke Halaman Kuriiing</a>
-          <a class="btn btn-outline-secondary" href="https://github.com/Rennd9/kuru-kuru" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <a class="btn btn-outline-secondary" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
           </svg>Github</a>
       </small>
