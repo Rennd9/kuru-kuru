@@ -7,7 +7,6 @@ function counterClick(event) {
   }
 }
 
-
 document.addEventListener("click", counterClick);  //varible
     var audioList = [
         new Audio("audio/kuruto.mp3"),
@@ -156,11 +155,26 @@ document.addEventListener("click", counterClick);  //varible
       animateImage("bawah"); // Gambar bergerak dari atas ke bawah
       animateImage("kiri"); // Gambar bergerak dari kanan ke kiri
       animateImage("kanan"); // Gambar bergerak dari kiri ke kanan
-      // Variabel audio
-const slideElement = document.getElementById("slide-element");
-const audioElement = document.getElementById("audio-element");
+    // Variabel audio
+var audio = new Audio("audio/bgm.mp3"); // Ganti "nama_file_audio.mp3" dengan URL atau path file audio yang ingin digunakan
+audio.autoplay = true;
 
-slideElement.addEventListener("touchstart", () => {
-  audioElement.pause();
-});
-  
+// Fungsi autoplay
+function autoplayAudio() {
+    audio.play();
+}
+
+// Fungsi pause audio
+function pauseAudio() {
+    audio.pause();
+}
+
+// Fungsi resume audio
+function resumeAudio() {
+    audio.play();
+}
+
+// Panggil fungsi autoplay saat halaman dimuat
+window.onload = function() {
+    autoplayAudio();
+};
