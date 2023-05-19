@@ -10,9 +10,19 @@
 </head>
 <body>
   <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">  
-    <audio class='visibility:hidden' id="audio-element" src="audio/bgm.mp3" autoplay controls>
-      <!-- Kontrol pemutar audio -->
-    </audio>
+    <audio id="player" src="/audio/bgm.mp3"></audio> 
+    <script>
+      function toggleSound() {
+         var audioElem = document.getElementById('player');
+         if (audioElem.paused) {
+            audioElem.className = "fa fa-volume-up";
+            audioElem.play();
+         } else {
+            audioElem.className = "fa fa-pause";
+            audioElem.pause();
+         }
+      }
+    </script>
     <button class="btn btn-bd-primary py-2 d-flex align-items-center"
             id="bd-theme"
             type="button"
